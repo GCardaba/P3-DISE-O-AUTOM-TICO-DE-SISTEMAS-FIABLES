@@ -1,22 +1,6 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 30.03.2025 18:18:28
--- Design Name: 
--- Module Name: redundancia - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
+--Gabriel Cardaba y Javier Revilla 
+
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
@@ -39,6 +23,7 @@ architecture Behavioral of redundancia is
     signal clk_1hz : STD_LOGIC;
     signal reset_n : STD_LOGIC;
     signal count_value : STD_LOGIC_VECTOR (7 downto 0);
+    --signal enable1, enable2 : STD_LOGIC := '1';  -- Señales para habilitar/deshabilitar contadores se eliminan
 
     component clk_divider
         Generic ( SIMULATION_MODE : boolean := false );
